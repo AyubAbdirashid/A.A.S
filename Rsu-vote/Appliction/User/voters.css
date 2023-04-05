@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Tilt+Neon&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: whitesmoke;
+}
+body .section{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+input{
+  width: 340px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  border-radius: 15px;
+  padding-left: 8px;
+  border: 1px solid #55e7fa;
+  
+}
+#input1 >p ,#input2 >p{
+  font-weight: bold;
+  text-align: left;
+}
+#input1 >p{
+  margin-top: 15px;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-weight:bold;
+  text-align: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #000;
+  width: 340px;
+  padding-bottom: 10px;
+}
+button{
+  width: 340px;
+  height: 40px;
+  border-radius: 16px;
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 20px;
+  background: #55e7fa;
+  border: 1px solid  #55e7fa;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  transition: .3s ease;
+  cursor: pointer;
+  margin-bottom: 10px;
+  
+}
+button:hover{
+  background: transparent;
+  
+}
+.Register{
+  margin-top: 30px;
+  border: 1px solid whitesmoke;
+  height: 40px;
+  width: 370px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+div.block{
+  position: relative;
+  padding: 10px;
+  border: 2px  solid whitesmoke;
+  height: 370px;
+  width: auto;
+  text-align: center;
+  padding: 5px;
+  background: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.block #btn{
+  text-align: left;
+}
+.section img{
+  position: relative ;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+p a{
+  text-decoration: none;
+  font-weight: bold;
+  color: #1e94d9;
+  
+  
+}
+.sidebar{
+  background: whitesmoke;
+  width: 70%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0;
+  border: 1px solid whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  z-index: 1;
+  transition: all 300ms ease-in-out;
+}
+
+.links a{
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+  cursor: pointer;
+  color: #111;
+  border-bottom: 1px solid  #1e94d9;
+}
+.links h5{
+  text-align: center;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  
+}
+.links a i{
+  color:  #1e94d9;
+  display: inline-block;
+  margin-right: 10px;
+}
+.sidebar .links a.active,
+.sidebar .links a:hover{
+  background: #324142;
+  color: #fff;
+  transition: .300ms ease-in-out;
+  cursor: pointer;
+}
+.toggle-btn{
+  position: absolute;
+  top: 10px;
+  right: -80px;
+  width: 40px;
+  height: 40px;
+  background: #324142;
+  border-radius: 5px;
+  
+}
+.toggle-btn span{
+  position: absolute;
+  width: 80%;
+  height: 5px;
+  background: #fff;
+  transform: translateY(-50%);
+  transition: all 300ms ease-in-out;
+  left: 4.45px;
+  border-radius: 10px;
+}
+.sidebar.active .toggle-btn span:nth-child(1){
+  top: 20%;
+  transform: translateY(-50%) rotate(0deg);
+}
+.sidebar.active .toggle-btn span:nth-child(2) {
+  top: 50%;
+  display: block;
+}
+.sidebar.active .toggle-btn span:nth-child(3) {
+  top: 80%;
+  transform: translateY(-50%) rotate(0deg);
+}
+
+.sidebar.active{
+  left: -74%;
+}
+.toggle-btn span:nth-child(1){
+  top: 50%;
+ transform: translateY(-50%) rotate(45deg);
+}
+.toggle-btn span:nth-child(2) {
+  display: none;
+}
+.toggle-btn span:nth-child(3) {
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+}
